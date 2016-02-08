@@ -1,5 +1,3 @@
-setwd('C:/Users/simon.monk/Documents/Data Science Course/Exploratory Data Analysis/exdata-data-household_power_consumption')
-
 dataSet <- read.csv("household_power_consumption.txt", header=T, sep=";", na.strings = "?", colClasses=c("character", "character", "numeric","numeric", "numeric", "numeric","numeric", "numeric", "numeric"))
 str(dataSet)
 
