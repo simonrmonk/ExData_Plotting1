@@ -12,7 +12,7 @@ strptime(subSet$Time, "%H:%M:%S")
 subSet$Time <- strptime(paste(subSet$Date, subSet$Time), format="%Y-%m-%d %H:%M:%S")
 
 
-png(filename="plot4.png")
+png(filename="plot4.png", width=480, height=480))
 par(mfrow=c(2,2))
 
 plot(x=subSet$Time, y=subSet$Global_active_power, xlab="", ylab="Global Active Power", type="n")

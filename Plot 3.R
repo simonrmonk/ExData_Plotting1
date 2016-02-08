@@ -11,7 +11,7 @@ strptime(subSet$Time, "%H:%M:%S")
 
 subSet$Time <- strptime(paste(subSet$Date, subSet$Time), format="%Y-%m-%d %H:%M:%S")
 
-png(filename="plot3.png")
+png(filename="plot3.png", width=480, height=480))
 plot(x=subSet$Time, y=subSet$Sub_metering_1, xlab="", ylab="Energy sub metering", type="n")
 lines(x=subSet$Time, y=subSet$Sub_metering_1)
 lines(x=subSet$Time, y=subSet$Sub_metering_2, col=2)

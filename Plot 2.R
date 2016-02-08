@@ -11,7 +11,7 @@ strptime(subSet$Time, "%H:%M:%S")
 
 subSet$Time <- strptime(paste(subSet$Date, subSet$Time), format="%Y-%m-%d %H:%M:%S")
 
-png(filename="plot2.png")
+png(filename="plot2.png", width=480, height=480))
 plot(x=subSet$Time, y=subSet$Global_active_power, xlab="", ylab="Global Active Power (kilowatts)", type="n")
 lines(x=subSet$Time, y=subSet$Global_active_power)
 dev.off()

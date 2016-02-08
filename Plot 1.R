@@ -11,6 +11,6 @@ subSet$Date
 
 hist(subSet)
 
-png(filename="plot1.png")
+png(filename="plot1.png", width=480, height=480))
 hist(main="Global Active Power", subSet$Global_active_power, col=2, ylab="Frequency", xlab="Global Active Power (kilowatts)")
 dev.off()
